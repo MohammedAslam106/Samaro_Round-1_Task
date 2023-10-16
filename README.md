@@ -35,6 +35,8 @@ This project is designed to create a simple e-commerce platform with two main co
 
 [See the image](https://imgur.com/751mw1r)
 
+Watch the video for a demonstration: https://youtu.be/GAOA2paDGY8
+
 ## Acknowledgments
 
 - This project was created as a learning exercise and for demonstration purposes.
