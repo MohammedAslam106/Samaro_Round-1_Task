@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background: rgb(129, 129, 188);
+            color: rgb(249, 244, 244);
+        }
+        .content{
+            background: rgb(241, 80, 80);
+            border-radius: 10px;
+            padding: 35px;
+            box-shadow: 1px, 1px ;
+            font-weight: 600;
+        }
+        .image{
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .content-body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class=" content bg-teal-600 rounded px-5 py-5 shadow-sm text-gray-100 font-semibold">
+            <div class=" content-body  flex justify-center items-center gap-2">
+               <span>Payment is canceled</span>
+            </div>
+            <p>Please re-pay to purchse product.</p>
+        </div>
+    </div>
+</body>
+</html>

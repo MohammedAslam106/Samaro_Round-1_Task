@@ -1,0 +1,25 @@
+<div class=" flex flex-col justify-center items-center h-screen">
+  <h1 class=" text-4xl font-semibold text-center">Available Products</h1>
+  <div class=" flex flex-wrap justify-center items-center gap-10 mt-20 ">
+    <div class=" w-80 flex flex-col justify-center items-center border border-gray-300" 
+    *ngFor="let product of Products" >
+      <img class="object-fill w-56 h-56 p-2" src={{product.image}} alt="not found">
+      <div class=" bg-white w-full overflow-hidden p-4 border-t border-t-gray-300 ">
+        <p class="truncate text-">{{product.title}}</p>
+        <p>
+          <span class=" text-sm">₹</span>
+          <span class=" text-xl font-[500]">
+            {{product.price}}
+          </span>
+        </p>
+        <button
+          (click)="buyProduct(product)"
+          type="button"
+          class="w-full bg-orange-400 py-3 px-5 shadow-sm text-white hover:bg-transparent hover:text-orange-400 border border-orange-400 font-semibold mt-5"
+        >
+          BUY NOW
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
